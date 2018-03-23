@@ -48,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         tv = (TextView) findViewById(R.id.tv);
+
         ///////////////////////////////////////////Scheduler
         Observable.just("hehe").subscribeOn(Schedulers.io()).observeOn(Schedulers.io()).subscribe(new Action1<String>() {
             @Override
