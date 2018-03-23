@@ -34,6 +34,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        
+        
+        
+        
         // map map()操作符就是用于变换Observable对象的，map操作符返回一个Observable  就可以把东西一直map下去
         Observable.just("Hello, world!")
                 .map(new Func1<String, String>() {
